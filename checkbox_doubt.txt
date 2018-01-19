@@ -1,0 +1,16 @@
+            for (int store_var = 0; store_var < StoreCLB.Length; store_var++)
+            {
+
+                for (int a = 0; a < familiarCLB.Items.Count; a++)
+                {
+                   // MessageBox.Show("hlo");
+
+                    if (StoreCLB[store_var].Equals(familiarCLB.Items[a].ToString()))
+                    {
+                       // MessageBox.Show(StoreCLB[store_var].ToString(), a.ToString());
+
+                       // MessageBox.Show();
+                        familiarCLB.SetItemCheckState(a,CheckState.Checked);
+                    }
+                }
+            }
